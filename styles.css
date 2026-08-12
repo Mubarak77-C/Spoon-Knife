@@ -73,3 +73,10 @@ p,h1 {
   width: 200px;
   border-radius: 200px;
 }
+
+.container .text{
+  background-color: yellow;
+  color:red;
+  font-size: 20px;
+  text-align: center;
+}

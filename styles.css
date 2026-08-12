@@ -9,9 +9,16 @@
   margin: 50px auto;
 }
 
-p {
+p,h1 {
   display: block;
   width: 400px;
   margin: 50px auto;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+
+.image_pizza{
+  height: 120px;
+  width: 100px;
+  margin-top: 10%;
+  padding: 20px;
 }

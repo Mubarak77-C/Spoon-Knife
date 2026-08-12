@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Native CSS Nesting Example</title>
+  
+  <style>
+    /* Dark theme background styling */
+    body {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+
+    /* 1. THE PARENT CONTAINER */
+    .card {
+      background-color: #2d2d2d;
+      padding: 24px;
+      border-radius: 8px;
+      max-width: 400px;
+      margin-bottom: 30px;
+
+      /* 2. NESTED CHILD SELECTOR (Compiles to: .card .card-title) */
+      .card-title {
+        color: #ffcc00;
+        font-size: 22px;
+        margin-top: 0;
+      }
+
+      /* 3. NESTED DIRECT CHILD (Compiles to: .card > p) */
+      > p {
+        color: #cccccc;
+        line-height: 1.5;
+      }
+
+      /* 4. NESTED BUTTONS WITH PSEUDO-CLASSES */
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-weight: bold;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+        
+        /* The & chains the class: compiles to: .card .btn.primary */
+        &.primary {
+          background-color: #007bff;
+          color: white;
+        }
+
+        /* The & chains the class: compiles to: .card .btn.secondary */
+        &.secondary {
+          background-color: #6c757d;
+          color: white;
+          margin-left: 10px;
+        }
+
+        /* The & adds interactive states: compiles to: .card .btn:hover */
+        &:hover {
+          opacity: 0.9;
+          transform: translateY(-1px);
+        }
+
+        /* Compiles to: .card .btn:active */
+        &:active {
+          transform: translateY(0);
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Nesting Demo</h1>
+  <p>Look at the head tag in the source code to see how the selectors are nested inside .card {}</p>
+
+  <!-- HTML Structure matching the nested CSS above -->
+  <div class="card">
+    
+    <!-- Matches: .card .card-title -->
+    <h2 class="card-title">Nesting is Awesome</h2>
+    
+    <!-- Matches: .card > p -->
+    <p>This paragraph is a direct child of the card. Its styles are nested completely inside the parent CSS block clean and safe.</p>
+    
+    <!-- Matches: .card .btn AND .card .btn.primary -->
+    <button class="btn primary">Accept</button>
+    
+    <!-- Matches: .card .btn AND .card .btn.secondary -->
+    <button class="btn secondary">Decline</button>
+
+  </div>
+
+</body>
+</html>

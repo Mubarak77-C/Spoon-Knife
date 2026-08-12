@@ -62,3 +62,14 @@ p,h1 {
 #groupid{
   background-color: yellow;
 }
+
+/* imges*/
+.avatar.proportioned{
+  width: 300px;
+}
+
+.avatar.distorted{
+  height: 400px;
+  width: 200px;
+  border-radius: 200px;
+}

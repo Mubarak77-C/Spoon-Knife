@@ -1,0 +1,24 @@
+body{
+    width: auto;
+    background-color: gray;
+}
+
+   section {
+  background-color: aliceblue;
+ 
+  height: 25em;
+  width: 56em;
+  margin-left: 15em;
+
+  padding-top: 1em;
+
+}
+
+h1,p{
+   margin: 24px;
+  padding: 8px;
+  background-color: aqua;
+}
+button{
+    display: flex;
+}

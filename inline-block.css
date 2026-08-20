@@ -1,0 +1,19 @@
+body{
+    max-width: 600px;
+    margin:auto;
+}
+.one{
+    margin: 32px;
+  display: block;
+  background-color: rgb(255, 0, 157);
+  border: 2px solid blue;
+  padding: 32px;
+}
+.two{
+    display:inline;
+    margin:32px;
+    background-color: rgb(112, 204, 216);
+    border: 2px solid rgb(231, 5, 43);
+    padding:32px;
+    
+}

@@ -1,9 +1,9 @@
 body{
-    width: auto;
+    font-family: sans-serif;
     background-color: gray;
 }
 
-   section {
+   .box-card {
   background-color: aliceblue;
  
   height: 25em;
@@ -19,6 +19,14 @@ h1,p{
   padding: 8px;
   background-color: aqua;
 }
+
 button{
-    display: flex;
+    background-color: white;
+      display: block;
+  margin: 0 auto;
+  padding: 8px 24px;    
+}
+button-container{
+    text-align: center;
+  padding: 8px;
 }
